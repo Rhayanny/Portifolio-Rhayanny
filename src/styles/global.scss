@@ -1,0 +1,44 @@
+:root {
+  --Color-primary: #bc0463;
+  --Color-primary-Focus: #ff007b;
+  --Color-primary-Negative: #83004a;
+
+  --color-black-100: #000000;
+  --color-black-200: #050505;
+  --color-black-300: #080808;
+
+  --color-grey-100: #8fa6b2;
+  --color-grey-200: #c1cbd3;
+  --color-grey-300: #dde4eb;
+  --color-grey-400: #ededed;
+  --color-grey-500: #212529;
+  --color-grey-600: #0f0f10;
+
+  --color-white: #ffffff;
+
+  --font-family: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-black-100);
+  color: var(--color-grey-200);
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
+}
+
+
+::-webkit-scrollbar {
+  background-color: var(--Color-primary);
+  height: 1.5rem;
+  width: 0.3rem;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #4957a6d0;
+  border-radius: 30px;
+} 

@@ -1,0 +1,18 @@
+.title {
+  font-weight: 700;
+  line-height: 1.4;
+
+  &.one {
+    font-size: 45px;
+  }
+
+  &.Headline {
+    font-size: 12px;
+  }
+}
+
+.Headline {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+}
