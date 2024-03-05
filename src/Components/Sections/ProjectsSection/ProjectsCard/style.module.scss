@@ -1,0 +1,169 @@
+.cardProjects {
+  position: relative;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+
+  div {
+    width: 300px;
+    height: 200px;
+    background-color: #4158d0;
+    background-image: linear-gradient(43deg, #4957a6e4 16%, #790143e5 66%);
+    border-radius: 8px;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: pointer;
+  }
+
+  nav {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+
+  nav h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: inherit;
+    text-transform: uppercase;
+  }
+
+  nav p {
+    color: inherit;
+    opacity: 0.8;
+    font-size: 14px;
+  }
+
+  div:hover {
+    transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  div:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 1;
+  }
+
+  div:hover:before {
+    transform: translateX(-100%);
+  }
+
+  div:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 1;
+  }
+
+  div:hover:after {
+    transform: translateX(100%);
+  }
+
+  button {
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid var(--Color-primary-Focus);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+
+  button:hover {
+    background: rgb(151, 6, 103);
+    box-shadow: 0 0 30px 5px rgba(134, 9, 92, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+
+  button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+
+  button::before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+
+  button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+  a {
+    color: #fff;
+  }
+}
+
+@media (max-width: 785px) {
+  .cardProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

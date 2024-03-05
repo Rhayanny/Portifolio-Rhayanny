@@ -1,0 +1,38 @@
+.mainSection {
+  display: flex;
+  justify-content: center;
+  padding: 9vh 0;
+}
+.projectsSection {
+  margin: 0 auto 5%;
+  width: 100%;
+  max-width: 1220px;
+  padding: 1.5rem;
+  h3 {
+    width: max-content;
+    align-self: flex-start;
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.5rem, 8vw, 4rem);
+    color: var(--color-white);
+    filter: drop-shadow(rgb(248, 5, 159) 0rem 0rem 0.5rem);
+  }
+  ul {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 5rem;
+
+    @media (max-width: 800px) {
+      margin-top: 6rem;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .projectsSection > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
