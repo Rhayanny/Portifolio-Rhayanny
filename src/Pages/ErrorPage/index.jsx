@@ -1,10 +1,18 @@
-const NotFound = () => {
+import style from "./style.module.scss";
+
+const ErrorPage = () => {
   return (
-    <main>
-      <h2>Not Found - 404</h2>
-      <p>Página não encontrada</p>
+    <main className={style.error}>
+      <h1>Erro: 404</h1>
+      <p>Não foi possível encontrar a página!</p>
+      <div>
+        <img
+          src="https://i.pinimg.com/originals/ef/8b/bd/ef8bbd4554dedcc2fd1fd15ab0ebd7a1.gif"
+          alt="errorGif"
+        />
+      </div>
     </main>
   );
 };
 
-export default NotFound;
+export default ErrorPage;
