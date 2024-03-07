@@ -1,4 +1,6 @@
+import LinkExternal from "../../Link";
 import styles from "./style.module.scss";
+import curriculo from "../../../assets/downloads/RhayannyRodrigues-WordDev.pdf";
 
 const AboutMe = ({ setIsScrool }) => {
   const scrool = (section) => {
@@ -29,12 +31,18 @@ const AboutMe = ({ setIsScrool }) => {
           </span>
           <nav>
             <a
+              target="_blanck"
               onClick={() => scrool("contact")}
               className="title Headline btn "
               href="https://www.linkedin.com/in/rhayanny-rodrigues-76b23728a/"
             >
               Linkedin
             </a>
+            <LinkExternal
+              text="Currículo"
+              href={curriculo}
+              download="currículo.pdf"
+            />
           </nav>
         </div>
       </section>

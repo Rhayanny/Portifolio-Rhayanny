@@ -1,0 +1,29 @@
+.link {
+  display: inline-block;
+  padding: 15px 15px;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 3px;
+  line-height: 1;
+  background: linear-gradient(
+    45deg,
+    transparent 5%,
+    var(--Color-primary-Negative) 5%
+  );
+  border: none;
+  text-decoration: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    background: linear-gradient(
+      45deg,
+      transparent 5%,
+      var(--Color-primary-Focus) 5%
+    );
+    transform: translateY(-2px);
+    border: 1px;
+    box-shadow: 10px 10px 10px #4957a6c2;
+  }
+}
