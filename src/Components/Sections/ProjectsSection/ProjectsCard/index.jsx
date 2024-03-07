@@ -11,7 +11,9 @@ export const Card = ({ title, description, repository, variant }) => {
       </div>
 
       <button>
-        <a href={repository}>Repo</a>
+        <a target="_blank" href={repository}>
+          Repo
+        </a>
       </button>
     </div>
   );

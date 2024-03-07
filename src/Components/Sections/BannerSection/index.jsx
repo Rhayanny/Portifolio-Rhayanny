@@ -1,4 +1,4 @@
-import Perfil from "../../../assets/rhayanny.jpg";
+import Perfil from "../../../assets/imagens/rhayanny.jpg";
 import styles from "./style.module.scss";
 
 const Banners = ({ setIsScrool }) => {
@@ -17,8 +17,8 @@ const Banners = ({ setIsScrool }) => {
 
           <h2 className="title.Headline">Bem vindo ao meu portfólio</h2>
           <p className="title.Headline">
-            Sou dedicada, criativa e apaixonada por transformar ideias em
-            realidade.
+            Pretendo explorar novas áreas e tecnologias, sempre mantendo a
+            paixão pela programação acesa.
           </p>
           <nav>
             <button
