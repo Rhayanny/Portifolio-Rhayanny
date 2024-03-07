@@ -28,4 +28,17 @@ export const projects = [
     repository:
       "https://github.com/Kenzie-Academy-Brasil-Developers/DesafioFullstack-Rhayanny",
   },
+  {
+    title: "Buster",
+    description:
+      "Este projeto (BACKEND) é uma API Django para um sistema de gerenciamento de usuários e filmes. Ele permite que os usuários se cadastrem, façam login, busquem e atualizem suas informações. Além disso, os usuários podem criar, listar, buscar e excluir filmes da base de dados. ",
+    repository: "https://github.com/Rhayanny/Buster-Rhayanny",
+  },
+  {
+    title: "Kimóveis",
+    description:
+      "Este projeto (BACKEND) consiste no desenvolvimento de uma API para uma imobiliária, visando o gerenciamento de serviços relacionados à venda de imóveis. Através dessa aplicação, é possível cadastrar imóveis, usuários interessados na compra de propriedades, agendar e consultar horários de visitas aos imóveis disponíveis.",
+    repository:
+      "https://github.com/Kenzie-Academy-Brasil-Developers/m4-kimoveis-Rhayanny/tree/main/src",
+  },
 ];
